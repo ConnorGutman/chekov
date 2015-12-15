@@ -1,0 +1,28 @@
+{
+  "name": "chekov",
+  "authors": [
+    "Connor Gutman <connorgutman@gmail.com>"
+  ],
+  "description": "Personal theme for adsense sites",
+  "main": "index.html",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "themes"
+  ],
+  "license": "MIT",
+  "homepage": "connorgutman.com",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "4",
+    "font-awesome": "~4.5.0"
+  }
+}
