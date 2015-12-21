@@ -3,3 +3,5 @@ bower_components
 .bower-cache
 .bower-registry
 .bower-tmp
+### Sass Cache ###
+css/.sass-cache
