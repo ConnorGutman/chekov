@@ -6,6 +6,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="article-id" content="0">
 
   <!-- Bootstrap CSS -->
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-xWeRKjzyg6bep9D1AsHzUPEWHbWMzlRc84Z0aG+tyms= sha512-mGIRU0bcPaVjr7BceESkC37zD6sEccxE+RJyQABbbKNe83Y68+PyPM5nrE1zvbQZkSHDCJEtnAcodbhlq2/EkQ=="
@@ -62,7 +63,7 @@
     </button>
     <div class="collapse navbar-toggleable-xs" id="test">
       <ul class="nav navbar-nav pull-center">
-        <li class="nav-item active">
+        <li class="nav-item">
           <a class="nav-link" href="#">HOME <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
@@ -77,55 +78,44 @@
       </ul>
     </div>
   </nav>
-  <div class="container-fluid cover" id="">
+  <div class="container-fluid content" id="">
     <div class="row">
-      <div class="col-sm-4 side-bar">
+      <div class="col-sm-4 side-bar" id="relatedArticleOutput">
         <div class="card side-card ad-card">
-          <img class="card-img-top" src='http://placehold.it/336x280' />
+          <img class="card-img-top side-bar-ad" src='http://placehold.it/336x280' />
           <!-- Change to http://placepu.gs/336/280 -->
           <div class="card-block">
             <h4 class="card-title">Our Sponsors</h4>
           </div>
         </div>
-        <div class="card card-inverse side-card subscribe-card">
+        <div class="card side-card related-card">
           <div class="card-block">
-            <h4 class="card-title">Subscribe for Updates</h4>
-            <p class="card-text">Stay up to date and get alerts whenever a new story is posted.</p>
-            <form class="form-inline">
-              <div class="form-group">
-                <input type="email" class="form-control" id="inputEmail" placeholder="email@example.com">
-                <button type="submit" class="btn btn-primary" id="signUp">SIGN UP</button>
-              </div>
-
-            </form>
+            <h2 class="card-title text-xs-center">RELATED STORIES</h2>
           </div>
         </div>
       </div>
-      <div class="col-sm-8">
-        <a href="">
-          <div class="card article-card">
-            <img class="card-img-top" src="img/simple.png" alt="Card image cap">
-            <span class="fa-stack fa-lg overlay transition">
-              <span class="overlay-shadow"></span>
-              <i class="fa fa-circle fa-stack-2x overlay-circle"></i>
-              <i class="fa fa-chain fa-stack-1x fa-inverse overlay-icon"></i>
-            </span>
-            <div class="card-block">
-              <p class="card-text text-xs-center article-tags">FEATURED REVIEW</p>
-              <h3 class="card-title text-xs-center transition">
-                <em>Simple</em>: A 21<sup>st</sup> century bank with no bull***t</h3>
-            </div>
-          </div>
-        </a>
-      </div>
-    </div>
-    <div class="row" id="latestArticleOutput">
-      <div class="col-sm-12">
-        <div class="card">
-          <div class="card-block">
-            <h1 class="card-title text-xs-center">LATEST STORIES</h1>
-          </div>
-        </div>
+      <div class="col-sm-8 article-content">
+        <h1 class="card-title">
+          <em>Simple</em>: A 21<sup>st</sup> century bank with no bull***t</h1>
+        <p>By <a class="author" href="">Connor Gutman</a> on December 20th, 2015 12:00AM</p>
+        <img class="article-cover-img" src="img/simple.png">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque velit fermentum lacus pretium, quis gravida sem efficitur. Ut suscipit in nisl id blandit. Praesent varius pretium ullamcorper. Praesent tincidunt, est eu laoreet accumsan,
+          lectus ipsum accumsan dui, sit amet aliquet dui justo vitae nibh. Phasellus mauris velit, sollicitudin non mi non, molestie dapibus augue. In a sodales quam. Nam ac mi in lorem pharetra pretium. Morbi tortor nunc, auctor at commodo a, vestibulum
+          et risus. Suspendisse elit ante, lacinia vel mattis sed, molestie non nibh. Sed nunc enim, lobortis eu bibendum at, dictum ut quam. Aliquam interdum semper ligula, et imperdiet libero faucibus at.
+          <br> Duis quis semper justo, id lacinia lorem. Morbi interdum diam sit amet turpis lobortis, non elementum lorem vehicula. Duis eu bibendum mi, vitae fermentum sapien. Aliquam pellentesque erat eget iaculis ultricies. Maecenas tincidunt sodales
+          convallis. Phasellus rutrum nibh id sollicitudin egestas. Nulla tincidunt, ante ut venenatis volutpat, magna mi rhoncus urna, sit amet tempus elit nisi non massa. Fusce auctor, nunc quis varius porttitor, nisi diam mollis urna, quis commodo
+          augue lorem in mauris. Suspendisse in eros et erat congue malesuada laoreet at massa. Fusce sit amet enim aliquet, volutpat augue quis, ullamcorper massa. Duis sed quam dui. Nullam id risus leo. Lorem ipsum dolor sit amet, consectetur adipiscing
+          elit. Donec a lectus in est dictum tempor eu at lectus. Nam volutpat dui ac justo semper, at auctor leo venenatis. Phasellus iaculis id tortor vel cursus.
+          <br> Mauris finibus quis erat sit amet malesuada. Suspendisse non lorem a massa blandit egestas. In condimentum nibh purus, in rutrum tellus sollicitudin in. Cras imperdiet tortor elit, vel dictum ex hendrerit in. Etiam fermentum urna at aliquet
+          dictum. Cras in urna mollis, laoreet nisl nec, ullamcorper nunc. Nullam bibendum faucibus enim, eget elementum augue imperdiet a. Nulla tristique enim nec metus suscipit auctor in at enim. Cras urna lorem, tristique non bibendum sed, porttitor
+          at quam. Aliquam erat volutpat. Etiam ac laoreet sapien. Suspendisse eu sollicitudin massa. Fusce augue elit, hendrerit id enim non, tristique pellentesque mi. Quisque nec blandit est. Sed feugiat purus sed felis dapibus semper.
+          <br> Maecenas tempor ornare nisi et tempus. Sed pharetra urna dui, vitae vestibulum est gravida ut. Nam sagittis nisl nec nisl dignissim, quis semper sapien hendrerit. Aenean in posuere urna. Maecenas tempus, erat eget posuere tincidunt, ipsum velit
+          varius ante, ac blandit nibh nisi vulputate tortor. Mauris semper ac ante ac scelerisque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Cras interdum diam vitae ex blandit, a pulvinar quam pretium.
+          In nibh nisl, interdum at fringilla vitae, luctus eu justo. Aenean condimentum neque sit amet convallis porta. Nulla facilisi. Aenean eu rutrum magna, eu molestie enim. Maecenas iaculis lorem eget sapien iaculis, sed tempus lorem feugiat.
+          <br> Etiam dignissim posuere nisl ac mollis. Mauris pulvinar luctus luctus. Praesent mollis massa arcu, nec semper neque maximus vitae. Aliquam varius hendrerit mollis. Donec tempor consectetur erat, ac dignissim ligula rhoncus eu. Donec vitae gravida
+          orci. Mauris eu est id enim placerat pretium vel id leo. Ut ultricies sem a nibh facilisis, in ultricies dui cursus. Phasellus sit amet leo egestas, pretium enim nec, iaculis nisl. Aenean sed metus id arcu commodo pellentesque sit amet quis
+          purus. Sed id odio eu lacus fermentum volutpat. Donec sed ultrices tortor. Pellentesque ex arcu, mollis vel tellus ornare, scelerisque fringilla ex. Mauris ligula augue, pharetra nec erat non, rutrum facilisis tortor. Curabitur sed sagittis
+          est. Nullam volutpat, felis ut rhoncus volutpat, mi augue placerat nulla, nec vestibulum ipsum tellus a est.</p>
       </div>
     </div>
   </div>
@@ -192,7 +182,7 @@
   <!-- jQuery first, then Bootstrap JS. -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha256-GMscmjNs6MbZvXG2HRjP3MpdOGmXv078SRgH7M723Mc= sha512-1wnhBRtA+POGVA0yREk2RlDbJEdkNvMuRBGjT1FCI5wXmpiQHZWDIB8MpANBWM/GKSPDgCA/7HTrAIFgv70/Jw==" crossorigin="anonymous"></script>
-  <script src="js/latestArticles.js"></script>
+  <script src="js/relatedArticles.js"></script>
 </body>
 
 </html>

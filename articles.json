@@ -1,0 +1,19 @@
+{
+  "Articles": [{
+    "title": "<em>Simple</em>: A 21<sup>st</sup> century bank with no bull***t",
+    "tags": "FEATURED REVIEW",
+    "photo": "img/simple.png"
+  }, {
+    "title": "<em>Google Wallet</em>: can an app replace your checking account?",
+    "tags": "REVIEW",
+    "photo": "http://thinkpyxl.com/blog/wp-content/uploads/2014/02/8U9A5377.jpg"
+  }, {
+    "title": "<em>Level</em>: bring (almost) any bank into the 21<sup>st</sup> century.",
+    "tags": "ANALYSIS",
+    "photo": "http://citizensofculture.com/wp-content/uploads/2014/03/Promoshot_inwallet_03302014_01.jpg"
+  }, {
+    "title": "<em>Credit Unions</em>: The digital dilemma holding users back",
+    "tags": "OPINION",
+    "photo": "http://www.engageaccount.com/wp-content/uploads/2015/10/Facebook-cover.jpg"
+  }]
+}
