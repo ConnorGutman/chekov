@@ -26,16 +26,18 @@ $.getJSON("../articles.json", function(data) {
   var articleTitle = new Array();
   var articleTags = new Array();
   var articlePhoto = new Array();
+  var articleURL = new Array();
   var assembledArticle = new Array();
 
   for (i = 0; i < articleCount; i++) {
     articleTitle[i] = data.Articles[i].title;
     articleTags[i] = data.Articles[i].tags;
     articlePhoto[i] = data.Articles[i].photo;
+    articleURL[i] = data.Articles[i].url + ".html";
   }
 
   for (i = 0; i < articleCount; i++) {
-    assembledArticle[i] = syntax.ahrefOpen + syntax.ahrefOpen2 + syntax.cardOpen + syntax.cardImgOpen + articlePhoto[i] + syntax.cardImgOpen2 + "caption" + syntax.cardImgClose + syntax.cardOverlay2 + syntax.cardBlockOpen + syntax.articleTagsOpen + articleTags[i] + syntax.pClose + syntax.articleTitleOpen + articleTitle[i] + syntax.h3Close + syntax.divClose + syntax.divClose + syntax.ahrefClose;
+    assembledArticle[i] = syntax.ahrefOpen + articleURL[i] + syntax.ahrefOpen2 + syntax.cardOpen + syntax.cardImgOpen + articlePhoto[i] + syntax.cardImgOpen2 + "caption" + syntax.cardImgClose + syntax.cardOverlay2 + syntax.cardBlockOpen + syntax.articleTagsOpen + articleTags[i] + syntax.pClose + syntax.articleTitleOpen + articleTitle[i] + syntax.h3Close + syntax.divClose + syntax.divClose + syntax.ahrefClose;
   }
 
   $(document).ready(function() {

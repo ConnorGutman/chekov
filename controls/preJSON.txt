@@ -1,0 +1,141 @@
+<div class="container-fluid intro" id="top">
+  <div class='row'>
+    <div class='col-sm-6 col-sm-offset-3'>
+      <h1 class="text-xs-center">
+        <strong class="text-xs-center">BEST BANK NERD</strong>
+      </h1>
+      <p class="text-xs-center">A Nerd's take on the best of banking</p>
+    </div>
+    <div class="col-sm-3 social text-xs-center">
+      <a href="#">
+        <span class="fa-stack fa-lg">
+          <i class="fa fa-circle fa-stack-2x fb-circle transition"></i>
+          <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+        </span>
+      </a>
+      <a href="#">
+        <span class="fa-stack fa-lg">
+          <i class="fa fa-circle fa-stack-2x tw-circle transition"></i>
+          <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+        </span>
+      </a>
+      <a href="#">
+        <span class="fa-stack fa-lg">
+          <i class="fa fa-circle fa-stack-2x gp-circle transition"></i>
+          <i class="fa fa-google-plus fa-stack-1x fa-inverse"></i>
+        </span>
+      </a>
+      <a href="#">
+        <span class="fa-stack fa-lg">
+          <i class="fa fa-circle fa-stack-2x em-circle transition"></i>
+          <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+        </span>
+      </a>
+    </div>
+  </div>
+  <div class="row"></div>
+</div>
+<nav class="navbar navbar-static-top">
+  <button class="navbar-toggler hidden-sm-up pull-right" type="button" data-toggle="collapse" data-target="#test">
+    &#9776;
+  </button>
+  <div class="collapse navbar-toggleable-xs" id="test">
+    <ul class="nav navbar-nav pull-center">
+      <li class="nav-item">
+        <a class="nav-link" href="../index.html">HOME <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="../about.html">ABOUT</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="../checklist.html">CHECKLIST</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="../archive.html">ARCHIVE</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<div class="container-fluid content" id="">
+<div class="row">
+<div class="col-sm-4 side-bar" id="relatedArticleOutput">
+      <div class="card side-card ad-card">
+        <img class="card-img-top side-bar-ad" src='http://placehold.it/336x280' />
+        <!-- Change to http://placepu.gs/336/280 -->
+        <div class="card-block">
+          <h4 class="card-title">Our Sponsors</h4>
+        </div>
+      </div>
+      <div class="card side-card related-card">
+        <div class="card-block">
+          <h2 class="card-title text-xs-center">RELATED STORIES</h2>
+        </div>
+      </div>
+    </div>
+<div class="col-sm-8 article-content">
+      <h1 class="card-title">${title}</h1>
+      <p><span>By </span><a class="author" href="">Connor Gutman</a><span> on </span><span>${date}</span></p>
+      <img class="article-cover-img" src="${photo}">
+      <p>${text}</p>
+    </div>
+</div>
+</div>
+<div id="footer">
+  <div class="container">
+    <p class="copyright"><span>2015 © copyright</span><span>${site-name}</span><span>. All rights reserved.</span></p>
+    <div class="col-sm-4">
+      <h4>ABOUT</h4>
+      <p>Hello, my name is Connor and I'm a certified nerd. I'm a software engineer who just wants a good bank to use. I mainly tackle reviews from a technological standpoint and I'm looking for simplicity / quality of the features a banks offers.</p>
+    </div>
+    <div class="col-sm-2 col-footer-nav">
+      <h4>LINKS</h4>
+      <ul class="nav footer-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="../index.html">HOME</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../about.html">ABOUT</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../checklist.html">CHECKLIST</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../archive.html">ARCHIVE</a>
+        </li>
+      </ul>
+    </div>
+    <div class="col-sm-2 col-footer-nav">
+      <h4>SOCIAL</h4>
+      <ul class="nav footer-nav">
+        <li class="nav-item"><a class="nav-link" href="#"><a class="nav-link" href="#">Facebook</a></li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Twitter</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Google+</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Email</a>
+        </li>
+      </ul>
+    </div>
+    <div class="col-sm-3 col-footer-nav">
+      <h4>Other Links</h4>
+      <ul class="nav footer-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Parent Site</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">My Site</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Github</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<!-- jQuery first, then Bootstrap JS. -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha256-GMscmjNs6MbZvXG2HRjP3MpdOGmXv078SRgH7M723Mc= sha512-1wnhBRtA+POGVA0yREk2RlDbJEdkNvMuRBGjT1FCI5wXmpiQHZWDIB8MpANBWM/GKSPDgCA/7HTrAIFgv70/Jw==" crossorigin="anonymous"></script>
+<script src="../js/relatedArticles.js"></script>

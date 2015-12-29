@@ -6,6 +6,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="article-id" content="0">
 
   <!-- Bootstrap CSS -->
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-xWeRKjzyg6bep9D1AsHzUPEWHbWMzlRc84Z0aG+tyms= sha512-mGIRU0bcPaVjr7BceESkC37zD6sEccxE+RJyQABbbKNe83Y68+PyPM5nrE1zvbQZkSHDCJEtnAcodbhlq2/EkQ=="
@@ -62,10 +63,10 @@
     </button>
     <div class="collapse navbar-toggleable-xs" id="test">
       <ul class="nav navbar-nav pull-center">
-        <li class="nav-item active">
+        <li class="nav-item">
           <a class="nav-link" href="index.html">HOME <span class="sr-only">(current)</span></a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item active">
           <a class="nav-link" href="about.html">ABOUT</a>
         </li>
         <li class="nav-item">
@@ -77,53 +78,53 @@
       </ul>
     </div>
   </nav>
-  <div class="container-fluid cover" id="">
+  <div class="container-fluid content" id="">
     <div class="row">
-      <div class="col-sm-4 side-bar">
-        <div class="card side-card ad-card">
-          <img class="card-img-top" src='http://placehold.it/336x280' />
-          <!-- Change to http://placepu.gs/336/280 -->
-          <div class="card-block">
-            <h4 class="card-title">Our Sponsors</h4>
-          </div>
-        </div>
-        <div class="card card-inverse side-card subscribe-card">
-          <div class="card-block">
-            <h4 class="card-title">Subscribe for Updates</h4>
-            <p class="card-text">Stay up to date and get alerts whenever a new story is posted.</p>
-            <form class="form-inline">
-              <div class="form-group">
-                <input type="email" class="form-control" id="inputEmail" placeholder="email@example.com">
-                <button type="submit" class="btn btn-primary" id="signUp">SIGN UP</button>
-              </div>
-
-            </form>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-8">
-        <a href="/posts/article.html">
-          <div class="card article-card">
-            <img class="card-img-top" src="img/simple.png" alt="Card image cap">
-            <span class="fa-stack fa-lg overlay transition">
-              <span class="overlay-shadow"></span>
-              <i class="fa fa-circle fa-stack-2x overlay-circle"></i>
-              <i class="fa fa-chain fa-stack-1x fa-inverse overlay-icon"></i>
-            </span>
-            <div class="card-block">
-              <p class="card-text text-xs-center article-tags">FEATURED REVIEW</p>
-              <h3 class="card-title text-xs-center transition">
-                <em>Simple</em>: A 21<sup>st</sup> century bank with no bull***t</h3>
-            </div>
-          </div>
-        </a>
+      <div class="col-sm-12 article-content">
+        <h1 class="card-title text-xs-center">About The <strong>BEST BANK NERD</strong></h1>
       </div>
     </div>
-    <div class="row" id="latestArticleOutput">
-      <div class="col-sm-12">
-        <div class="card">
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="card article-card" style="padding: 2%;">
+        <img src="img/about.jpg" style="width: 100%;">
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="card article-card">
+          <h1 class="text-xs-center display-3">WHAT?</h1>
           <div class="card-block">
-            <h1 class="card-title text-xs-center">LATEST STORIES</h1>
+            <p>Best Bank Nerd is a blog aiming to test and review banks and other financial tools. For the most part this blog will be analyzing each subject from a technological stand point. In the quest to find the best bank, or banking tools, out there: I believe that technology and simplicity holds the answer.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="card article-card">
+          <h1 class="text-xs-center display-3">WHY?</h1>
+          <div class="card-block">
+            <p>Hello, my name is Connor! I'm a computer science student and business owner with an eye for simplicity. Banking is one of those things which frustrates the hell out of me, so I thought I'd post my findings for the world to see. I'm a strong believer that technology empowers us, and what you'll find on this site is all about the best technology in banking / finances.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="card article-card" style="padding: 2%;">
+        <img src="img/why.jpg" style="width: 100%;">
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="card article-card" style="padding: 2%;">
+        <img src="img/me.jpeg" style="width: 100%;">
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="card article-card">
+          <h1 class="text-xs-center display-3">WHO?</h1>
+          <div class="card-block">
+            <p>Hello, my name is Connor! I'm a computer science student and business owner with an eye for simplicity. Banking is one of those things which frustrates the hell out of me, so I thought I'd post my findings for the world to see. I'm a strong believer that technology empowers us, and what you'll find on this site is all about the best technology in banking / finances.</p>
           </div>
         </div>
       </div>
@@ -143,10 +144,10 @@
         <h4>LINKS</h4>
         <ul class="nav footer-nav">
           <li class="nav-item">
-            <a class="nav-link active" href="index.html">HOME</a>
+            <a class="nav-link" href="index.html">HOME</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="about.html">ABOUT</a>
+            <a class="nav-link active" href="about.html">ABOUT</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="checklist.html">CHECKLIST</a>
@@ -192,7 +193,7 @@
   <!-- jQuery first, then Bootstrap JS. -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha256-GMscmjNs6MbZvXG2HRjP3MpdOGmXv078SRgH7M723Mc= sha512-1wnhBRtA+POGVA0yREk2RlDbJEdkNvMuRBGjT1FCI5wXmpiQHZWDIB8MpANBWM/GKSPDgCA/7HTrAIFgv70/Jw==" crossorigin="anonymous"></script>
-  <script src="js/latestArticles.js"></script>
+  <script src="js/relatedArticles.js"></script>
 </body>
 
 </html>

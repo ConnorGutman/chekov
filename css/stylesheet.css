@@ -234,4 +234,43 @@ nav {
       #footer .copyright {
         text-align: center; } }
 
+.portal .controls-side-bar {
+  height: 100vh;
+  background-color: #455A64; }
+  .portal .controls-side-bar .blog-icon {
+    margin-top: 2vh;
+    padding-top: 2vh;
+    color: #ffffff;
+    border: 2px solid #ffffff; }
+  .portal .controls-side-bar hr {
+    width: 100%;
+    border: 1px solid #ffffff; }
+
+.nav-icon {
+  color: #ffffff;
+  margin: 1vh 1%; }
+  .nav-icon:hover i {
+    color: #ffffff;
+    font-size: 200%; }
+
+.bottom-text {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0; }
+  .bottom-text p {
+    position: relative;
+    color: #ffffff; }
+
+.create .upload-form {
+  width: 100%;
+  margin-top: 5vh; }
+  .create .upload-form .form-group .col-md-12 input {
+    margin: 1vh 0; }
+  .create .upload-form .form-group .col-md-12 textarea {
+    height: 50vh;
+    margin: 1vh 0; }
+  .create .upload-form .form-group .col-md-12 #create {
+    background-color: #455A64; }
+
 /*# sourceMappingURL=stylesheet.css.map */

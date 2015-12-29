@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags always come first -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../css/stylesheet.css">
+</head>
+
+<body>
+  <div class="container-fluid portal" id="top">
+    <div class='row'>
+      <div class="col-sm-2 controls-side-bar">
+        <div class="blog-icon">
+          <h1 class="text-xs-center"><i class="fa fa-university"></i></h1>
+          <p class="text-xs-center">
+            <strong>BEST BANK NERD</strong>
+          </p>
+        </div>
+        <a class="nav-icon text-xs-center" href="">
+          <h1><i class="fa fa-home transition"></i></h1>
+        </a>
+        <a class="nav-icon text-xs-center" id="createLink">
+          <h1><i class="fa fa-plus transition"></i></h1>
+        </a>
+        <a class="nav-icon text-xs-center" href="">
+          <h1><i class="fa fa-pencil transition"></i></h1>
+        </a>
+        <a class="nav-icon text-xs-center" href="">
+          <h1><i class="fa fa-cog transition"></i></h1>
+        </a>
+        <div class="bottom-text">
+          <a class="text-xs-center" href="http://www.bestbanknerd.com">
+            <p><i class="fa fa-github"></i> Github Repo</p>
+          </a>
+          <a class="text-xs-center" href="http://www.bestbanknerd.com">
+            <p><i class="fa fa-globe"></i> bestbanknerd.com</p>
+          </a>
+        </div>
+      </div>
+      <div class='col-sm-10 portal-content'>
+        <div class="home"></div>
+        <div class="create">
+          <div class="upload-form">
+            <form id="new-post">
+              <fieldset>
+                <!-- Text input-->
+                <div class="form-group">
+                  <div class="col-md-12">
+                    <input id="title" name="title" type="text" placeholder="Post Title" class="form-control input-md" required="">
+
+                  </div>
+                </div>
+
+                <!-- Text input-->
+                <div class="form-group">
+                  <div class="col-md-12">
+                    <input id="tags" name="tags" type="text" placeholder="Tags (separate with space)" class="form-control input-md" required="">
+
+                  </div>
+                </div>
+
+                <!-- Text input-->
+                <div class="form-group">
+                  <div class="col-md-12">
+                    <input id="url" name="url" type="text" placeholder="URL" class="form-control input-md" required="">
+
+                  </div>
+                </div>
+
+                <!-- Text input-->
+                <div class="form-group">
+                  <div class="col-md-12">
+                    <input id="cover-img" name="cover-img" type="text" placeholder="Cover Image URL" class="form-control input-md" required="">
+
+                  </div>
+                </div>
+                <!-- Textarea -->
+                <div class="form-group">
+                  <div class="col-md-12">
+                    <textarea class="form-control" id="text" name="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eget blandit elit, vel varius leo. Sed ornare diam et lacus scelerisque, pellentesque viverra purus iaculis. Etiam pellentesque elit at pretium volutpat. Vestibulum ante
+                      ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In in vestibulum urna, non eleifend ante. Nullam faucibus urna quis purus condimentum, eget efficitur eros tincidunt. Mauris consectetur imperdiet velit, in
+                      placerat augue elementum et. Etiam rutrum nulla quis commodo venenatis.
+                    </textarea>
+                  </div>
+                </div>
+
+
+                <!-- Button -->
+                <div class="form-group">
+                  <div class="col-md-12">
+                    <button id="create" name="create" class="btn btn-primary">Submit</button>
+                  </div>
+                </div>
+
+              </fieldset>
+            </form>
+
+          </div>
+          <div class="output"></div>
+          <input id="outputDate" type="hidden"></input>
+          <input id="outputPostCount" type="hidden"></input>
+          <textarea id="outputHtml"></textarea>
+        </div>
+        <div class="manage"></div>
+        <div class="settings"></div>
+      </div>
+    </div>
+  </div>
+  <!-- jQuery first, then Bootstrap JS. -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="json2html.js"></script>
+  <script type="text/javascript" src="article2json.js"></script>
+  <script src="create.js"></script>
+
+</body>
+
+</html>

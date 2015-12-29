@@ -286,7 +286,6 @@ nav {
     padding-top: 5vh !important;
   }
 }
-
 #footer {
   position: relative;
   height: auto;
@@ -304,6 +303,66 @@ nav {
     right: 5%;
     @media (max-width: 48em) {
       text-align: center;
+    }
+  }
+}
+
+//Controls SCSS
+.portal {
+  .controls-side-bar {
+    height: 100vh;
+    background-color: #455A64;
+    .blog-icon {
+      margin-top: 2vh;
+      padding-top: 2vh;
+      color: #ffffff;
+      border: 2px solid #ffffff;
+    }
+    hr {
+      width: 100%;
+      border: 1px solid #ffffff;
+    }
+  }
+}
+.nav-icon {
+  color: #ffffff;
+  margin: 1vh 1%;
+  &:hover {
+    i {
+      color: #ffffff;
+      font-size: 200%;
+    }
+  }
+}
+.bottom-text {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  p {
+    position: relative;
+    color: #ffffff;
+  }
+}
+
+//Create Article
+.create {
+  .upload-form {
+    width: 100%;
+    margin-top: 5vh;
+    .form-group {
+      .col-md-12 {
+        input {
+          margin: 1vh 0;
+        }
+        textarea {
+          height: 50vh;
+          margin: 1vh 0;
+        }
+        #create {
+          background-color: #455A64;
+        }
+      }
     }
   }
 }
