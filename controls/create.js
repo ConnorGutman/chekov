@@ -8,7 +8,6 @@ $.getJSON("../articles.json", function(data) {
       submitEdit();
     }
 
-
     function submitCreate() {
       //Main variables
       var postCount = data.Articles.length;
