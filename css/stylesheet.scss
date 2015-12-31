@@ -360,9 +360,33 @@ nav {
           margin: 1vh 0;
         }
         #create {
+          margin-top: 2vh;
+          background-color: #455A64;
+        }
+        #edit {
+          display: none;
+          margin-top: 2vh;
           background-color: #455A64;
         }
       }
     }
   }
+  .download-btn {
+    width: 80%;
+    margin: 5vh 10%;
+    border: 2px solid #455A64;
+    background-color: #455A64;
+    color: white;
+    &:hover {
+      border: 2px solid #455A64;
+      background-color: #EEEEEE;
+      color: #455A64;
+    }
+  }
+}
+.manage {
+  display: none;
+}
+.settings {
+  display: none;
 }

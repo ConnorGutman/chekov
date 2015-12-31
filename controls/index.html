@@ -23,16 +23,13 @@
             <strong>BEST BANK NERD</strong>
           </p>
         </div>
-        <a class="nav-icon text-xs-center" href="">
-          <h1><i class="fa fa-home transition"></i></h1>
-        </a>
         <a class="nav-icon text-xs-center" id="createLink">
           <h1><i class="fa fa-plus transition"></i></h1>
         </a>
-        <a class="nav-icon text-xs-center" href="">
+        <a class="nav-icon text-xs-center" id="manageLink">
           <h1><i class="fa fa-pencil transition"></i></h1>
         </a>
-        <a class="nav-icon text-xs-center" href="">
+        <a class="nav-icon text-xs-center" id="settingsLink">
           <h1><i class="fa fa-cog transition"></i></h1>
         </a>
         <div class="bottom-text">
@@ -45,7 +42,6 @@
         </div>
       </div>
       <div class='col-sm-10 portal-content'>
-        <div class="home"></div>
         <div class="create">
           <div class="upload-form">
             <form id="new-post">
@@ -57,28 +53,22 @@
 
                   </div>
                 </div>
-
                 <!-- Text input-->
                 <div class="form-group">
                   <div class="col-md-12">
                     <input id="tags" name="tags" type="text" placeholder="Tags (separate with space)" class="form-control input-md" required="">
-
                   </div>
                 </div>
-
                 <!-- Text input-->
                 <div class="form-group">
                   <div class="col-md-12">
                     <input id="url" name="url" type="text" placeholder="URL" class="form-control input-md" required="">
-
                   </div>
                 </div>
-
                 <!-- Text input-->
                 <div class="form-group">
                   <div class="col-md-12">
                     <input id="cover-img" name="cover-img" type="text" placeholder="Cover Image URL" class="form-control input-md" required="">
-
                   </div>
                 </div>
                 <!-- Textarea -->
@@ -90,35 +80,71 @@
                     </textarea>
                   </div>
                 </div>
-
-
                 <!-- Button -->
                 <div class="form-group">
                   <div class="col-md-12">
                     <button id="create" name="create" class="btn btn-primary">Submit</button>
+                    <button id="edit" name="edit" class="btn btn-primary">Make Changes</button>
                   </div>
                 </div>
-
               </fieldset>
             </form>
-
           </div>
           <div class="output"></div>
           <input id="outputDate" type="hidden"></input>
           <input id="outputPostCount" type="hidden"></input>
-          <textarea id="outputHtml"></textarea>
+          <input id="edit-outputDate" type="hidden"></input>
+          <input id="edit-outputPostCount" type="hidden"></input>
+          <input id="outputURL" type="hidden"></input>
         </div>
-        <div class="manage"></div>
-        <div class="settings"></div>
+        <div class="manage">
+          <table class="table table-hover" id="allArticles">
+            <thead>
+              <tr>
+                <th>Article Title</th>
+                <th>Date</th>
+                <th>URL</th>
+              </tr>
+            </thead>
+            <tbody>
+            </tbody>
+          </table>
+        </div>
+        <div class="settings">Test4</div>
       </div>
     </div>
   </div>
   <!-- jQuery first, then Bootstrap JS. -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
+  <script src="//cdn.tinymce.com/4/tinymce.min.js"></script>
+  <script>
+    tinymce.init({
+      selector: 'textarea',
+      height: 200
+    });
+  </script>
   <script type="text/javascript" src="json2html.js"></script>
   <script type="text/javascript" src="article2json.js"></script>
-  <script src="create.js"></script>
+    <script type="text/javascript" src="manage.js"></script>
+  <script type="text/javascript" src="create.js"></script>
+  <script>
+    $("#createLink").click(function() {
+      $(".create").css("display", "inline");
+      $(".manage").css("display", "none");
+      $(".settings").css("display", "none");
+    });
+    $("#manageLink").click(function() {
+      $(".create").css("display", "none");
+      $(".manage").css("display", "inline");
+      $(".settings").css("display", "none");
+    });
+    $("#settingsLink").click(function() {
+      $(".create").css("display", "none");
+      $(".manage").css("display", "none");
+      $(".settings").css("display", "inline");
+    });
+  </script>
 
 </body>
 
