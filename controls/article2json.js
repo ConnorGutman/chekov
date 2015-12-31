@@ -126,6 +126,7 @@ function article2json() {
             "tag": "a",
             "class": "nav-link",
             "href": "../index.html",
+            "html": "HOME",
             "children": [{
               "tag": "span",
               "class": "sr-only",
