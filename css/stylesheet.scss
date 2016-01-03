@@ -310,6 +310,7 @@ nav {
 //Controls SCSS
 .portal {
   .controls-side-bar {
+    position: fixed;
     height: 100vh;
     background-color: #455A64;
     .blog-icon {
@@ -329,8 +330,7 @@ nav {
   margin: 1vh 1%;
   &:hover {
     i {
-      color: #ffffff;
-      font-size: 200%;
+      color: #ccc;
     }
   }
 }

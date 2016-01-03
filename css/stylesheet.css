@@ -235,6 +235,7 @@ nav {
         text-align: center; } }
 
 .portal .controls-side-bar {
+  position: fixed;
   height: 100vh;
   background-color: #455A64; }
   .portal .controls-side-bar .blog-icon {
@@ -250,8 +251,7 @@ nav {
   color: #ffffff;
   margin: 1vh 1%; }
   .nav-icon:hover i {
-    color: #ffffff;
-    font-size: 200%; }
+    color: #ccc; }
 
 .bottom-text {
   position: absolute;

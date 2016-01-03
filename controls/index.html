@@ -14,7 +14,7 @@
 </head>
 
 <body>
-  <div class="container-fluid portal" id="top">
+  <div class="container-fluid portal">
     <div class='row'>
       <div class="col-sm-2 controls-side-bar">
         <div class="blog-icon">
@@ -29,9 +29,6 @@
         <a class="nav-icon text-xs-center" id="manageLink">
           <h1><i class="fa fa-pencil transition"></i></h1>
         </a>
-        <a class="nav-icon text-xs-center" id="settingsLink">
-          <h1><i class="fa fa-cog transition"></i></h1>
-        </a>
         <div class="bottom-text">
           <a class="text-xs-center" href="http://www.bestbanknerd.com">
             <p><i class="fa fa-github"></i> Github Repo</p>
@@ -41,7 +38,7 @@
           </a>
         </div>
       </div>
-      <div class='col-sm-10 portal-content'>
+      <div class='col-sm-10 col-sm-offset-2 portal-content'>
         <div class="create">
           <div class="upload-form">
             <form id="new-post">
@@ -110,7 +107,6 @@
             </tbody>
           </table>
         </div>
-        <div class="settings">Test4</div>
       </div>
     </div>
   </div>
@@ -132,17 +128,10 @@
     $("#createLink").click(function() {
       $(".create").css("display", "inline");
       $(".manage").css("display", "none");
-      $(".settings").css("display", "none");
     });
     $("#manageLink").click(function() {
       $(".create").css("display", "none");
       $(".manage").css("display", "inline");
-      $(".settings").css("display", "none");
-    });
-    $("#settingsLink").click(function() {
-      $(".create").css("display", "none");
-      $(".manage").css("display", "none");
-      $(".settings").css("display", "inline");
     });
   </script>
 

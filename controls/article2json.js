@@ -148,15 +148,6 @@ function article2json() {
           "children": [{
             "tag": "a",
             "class": "nav-link",
-            "href": "../checklist.html",
-            "html": "CHECKLIST"
-          }]
-        }, {
-          "tag": "li",
-          "class": "nav-item",
-          "children": [{
-            "tag": "a",
-            "class": "nav-link",
             "href": "../archive.html",
             "html": "ARCHIVE"
           }]
@@ -292,15 +283,6 @@ function article2json() {
               "class": "nav-link",
               "href": "../about.html",
               "html": "ABOUT"
-            }]
-          }, {
-            "tag": "li",
-            "class": "nav-item",
-            "children": [{
-              "tag": "a",
-              "class": "nav-link",
-              "href": "../checklist.html",
-              "html": "CHECKLIST"
             }]
           }, {
             "tag": "li",
