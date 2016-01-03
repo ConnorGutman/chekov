@@ -1,4 +1,4 @@
-$.getJSON("../articles.json", function(data) {
+$.getJSON("/chekov/articles.json", function(data) {
 
   //HTML syntax assign
   var syntax = {
