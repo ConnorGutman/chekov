@@ -2,7 +2,7 @@ $.getJSON("/chekov/articles.json", function(data) {
 
   //HTML syntax assign
   var syntax = {
-    "ahrefOpen": "<a href='",
+    "ahrefOpen": "<a href='/chekov",
     "ahrefOpen2": "'>",
     "ahrefClose": "</a>",
     "divClose": "</div>",
