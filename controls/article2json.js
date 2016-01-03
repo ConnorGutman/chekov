@@ -2,8 +2,9 @@ function article2json() {
 
   var postCount = $("#edit-outputPostCount").val();
   var htmlOpen = "<!DOCTYPE html><html lang='en'>";
+  var pageTitle = $("#title").val();
 
-  var head = "<head><!-- Required meta tags always come first --><meta charset='utf-8'><meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'><meta http-equiv='x-ua-compatible' content='ie=edge'><meta name='article-id' content='" + postCount + "'><!-- Bootstrap CSS --><link href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css' rel='stylesheet' integrity='sha256-xWeRKjzyg6bep9D1AsHzUPEWHbWMzlRc84Z0aG+tyms= sha512-mGIRU0bcPaVjr7BceESkC37zD6sEccxE+RJyQABbbKNe83Y68+PyPM5nrE1zvbQZkSHDCJEtnAcodbhlq2/EkQ=='' crossorigin='anonymous'><!-- Custom CSS --><link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,700' rel='stylesheet' type='text/css'><link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css'><link rel='stylesheet' href='../css/stylesheet.css'></head><body>";
+  var head = "<head><!-- Required meta tags always come first --><meta charset='utf-8'><meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'><meta http-equiv='x-ua-compatible' content='ie=edge'><meta name='article-id' content='" + postCount + "'><title>" + pageTitle + "</title><!-- Bootstrap CSS --><link href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css' rel='stylesheet' integrity='sha256-xWeRKjzyg6bep9D1AsHzUPEWHbWMzlRc84Z0aG+tyms= sha512-mGIRU0bcPaVjr7BceESkC37zD6sEccxE+RJyQABbbKNe83Y68+PyPM5nrE1zvbQZkSHDCJEtnAcodbhlq2/EkQ=='' crossorigin='anonymous'><!-- Custom CSS --><link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,700' rel='stylesheet' type='text/css'><link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css'><link rel='stylesheet' href='../css/stylesheet.css'></head><body>";
 
   var transform = [{
     "tag": "div",
@@ -21,12 +22,12 @@ function article2json() {
           "children": [{
             "tag": "strong",
             "class": "text-xs-center",
-            "html": "BEST BANK NERD"
+            "html": "CHEKOV"
           }]
         }, {
           "tag": "p",
           "class": "text-xs-center",
-          "html": "A Nerd's take on the best of banking"
+          "html": "A blogging theme for GH-Pages."
         }]
       }, {
         "tag": "div",
@@ -126,12 +127,7 @@ function article2json() {
             "tag": "a",
             "class": "nav-link",
             "href": "../index.html",
-            "html": "HOME",
-            "children": [{
-              "tag": "span",
-              "class": "sr-only",
-              "html": "(current)"
-            }]
+            "html": "HOME"
           }]
         }, {
           "tag": "li",
@@ -255,7 +251,7 @@ function article2json() {
           "html": "ABOUT"
         }, {
           "tag": "p",
-          "html": "Hello, my name is Connor and I'm a certified nerd. I'm a software engineer who just wants a good bank to use. I mainly tackle reviews from a technological standpoint and I'm looking for simplicity / quality of the features a banks offers."
+          "html": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi porttitor tellus turpis, non tincidunt erat tincidunt sit amet. Praesent sit amet odio quis eros iaculis interdum vel suscipit dui. Aenean sed iaculis justo."
         }]
       }, {
         "tag": "div",
@@ -371,7 +367,7 @@ function article2json() {
             "children": [{
               "tag": "a",
               "class": "nav-link",
-              "href": "#",
+              "href": "http://www.connorgutman.com",
               "html": "My Site"
             }]
           }, {
@@ -380,7 +376,7 @@ function article2json() {
             "children": [{
               "tag": "a",
               "class": "nav-link",
-              "href": "#",
+              "href": "https://github.com/ConnorGutman/chekov",
               "html": "Github"
             }]
           }]

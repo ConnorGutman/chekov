@@ -107,6 +107,10 @@ nav {
 
 .col-sm-6 .article-card {
   margin-top: 2vh; }
+.col-sm-6 .about-img-div {
+  padding: 2%; }
+.col-sm-6 .about-img {
+  width: 100%; }
 
 @media (max-width: 68em) {
   .col-sm-8 .article-card {

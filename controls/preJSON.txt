@@ -2,9 +2,9 @@
   <div class='row'>
     <div class='col-sm-6 col-sm-offset-3'>
       <h1 class="text-xs-center">
-        <strong class="text-xs-center">BEST BANK NERD</strong>
+        <strong class="text-xs-center">CHEKOV</strong>
       </h1>
-      <p class="text-xs-center">A Nerd's take on the best of banking</p>
+      <p class="text-xs-center">A blogging theme for GH-Pages.</p>
     </div>
     <div class="col-sm-3 social text-xs-center">
       <a href="#">
@@ -82,7 +82,7 @@
     <p class="copyright"><span>2015 © copyright</span><span>${site-name}</span><span>. All rights reserved.</span></p>
     <div class="col-sm-4">
       <h4>ABOUT</h4>
-      <p>Hello, my name is Connor and I'm a certified nerd. I'm a software engineer who just wants a good bank to use. I mainly tackle reviews from a technological standpoint and I'm looking for simplicity / quality of the features a banks offers.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi porttitor tellus turpis, non tincidunt erat tincidunt sit amet. Praesent sit amet odio quis eros iaculis interdum vel suscipit dui. Aenean sed iaculis justo.</p>
     </div>
     <div class="col-sm-2 col-footer-nav">
       <h4>LINKS</h4>
@@ -120,10 +120,10 @@
           <a class="nav-link" href="#">Parent Site</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">My Site</a>
+          <a class="nav-link" href="http://www.connorgutman.com">My Site</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Github</a>
+          <a class="nav-link" href="https://github.com/ConnorGutman/chekov">Github</a>
         </li>
       </ul>
     </div>
